@@ -1,0 +1,6 @@
+com\farm2market\backend\model\User.class
+com\farm2market\backend\controller\ProductController.class
+com\farm2market\backend\BackendApplication.class
+com\farm2market\backend\model\Product.class
+com\farm2market\backend\controller\UserController.class
+com\farm2market\backend\repository\ProductRepository.class
