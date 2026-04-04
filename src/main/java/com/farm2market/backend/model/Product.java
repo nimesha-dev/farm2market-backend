@@ -7,15 +7,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Product {
 
     @Id
-    private String id;        // MongoDB auto-generates this
+    private String id;
+    private String name;
+    private double price;
+    private int quantity;
+    private String farmerId;
 
-    private String name;      // Product name
-    private double price;     // Product price
-    private int quantity;     // Available quantity
-    private String farmerId;  // Who added the product
-
-    // Constructors
-    public Product() {}
+    public Product() {
+    }
 
     public Product(String name, double price, int quantity, String farmerId) {
         this.name = name;
@@ -24,7 +23,6 @@ public class Product {
         this.farmerId = farmerId;
     }
 
-    // Getters and Setters
     public String getId() {
         return id;
     }
@@ -33,28 +31,28 @@ public class Product {
         return name;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public String getFarmerId() {
-        return farmerId;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     public void setPrice(double price) {
         this.price = price;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public String getFarmerId() {
+        return farmerId;
     }
 
     public void setFarmerId(String farmerId) {

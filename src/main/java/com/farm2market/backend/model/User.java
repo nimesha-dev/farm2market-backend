@@ -11,7 +11,7 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private String role; // FARMER or BUYER
+    private String role;
 
     public User() {
     }
